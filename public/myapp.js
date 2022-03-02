@@ -13,6 +13,17 @@ async function init() {
   const player = controls.getPlayer();
   const btn = document.getElementById('btn');
   let hideBar = true;
+  const colors = document.getElementById('colors');
+  const textContainer = document.getElementsByClassName('shaka-text-container');
+  
+  console.log(textContainer)
+
+
+
+  colors.addEventListener('change', ()=>{
+    // console.log(colors.value)
+    textContainer[0].style.color = `${colors.value}`
+  })
 
   // const skip = new (func())();
 
