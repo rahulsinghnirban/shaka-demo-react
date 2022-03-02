@@ -11,3 +11,15 @@
   .shaka-text-container:fullscreen {
     font-size: 18pt;
   }
+  #btn{
+    margin: 20px 10px;
+  cursor: pointer;
+  font-weight: 500;
+  padding: 13px 25px;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  border: none;
+  color: white;
+  background: #185adb;
+  transition: all 0.25s ease;
+  }
