@@ -9,6 +9,12 @@ export default function Video(){
             <video autoPlay data-shaka-player id="video" style={{marginLeft:"50%"},{width:"100%"},{height:"100%"},{zindex:"1"}}></video>
         </div></center>
         <button id="btn">ToggleBar</button>
+        <select name="colors" id="colors">
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+            <option value="yellow">Yellow</option>
+        </select>
         </>
     );
 

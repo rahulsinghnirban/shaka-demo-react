@@ -13,6 +13,7 @@ async function init() {
   const player = controls.getPlayer();
   const btn = document.getElementById('btn');
   let hideBar = true;
+<<<<<<< HEAD
   const config={
     'seekBarColors': {
       base: '#185adb',
@@ -22,6 +23,19 @@ async function init() {
     }
   }
   ui.configure(config);
+=======
+  const colors = document.getElementById('colors');
+  const textContainer = document.getElementsByClassName('shaka-text-container');
+  
+  console.log(textContainer)
+
+
+
+  colors.addEventListener('change', ()=>{
+    // console.log(colors.value)
+    textContainer[0].style.color = `${colors.value}`
+  })
+>>>>>>> cfba31498194b9ee97899825b18f2eb929d0f29a
 
   // const skip = new (func())();
 

@@ -1,13 +1,17 @@
 video::cue {
+<<<<<<< HEAD
     font-size: 40px;
     color: azure;
     
 
+=======
+    font-size: 2pt;
+>>>>>>> cfba31498194b9ee97899825b18f2eb929d0f29a
   }
   
   /* Styling with UI. */
   .shaka-text-container {
-    color: red;
+    color: purple;
     font-size: 30px;
     font-family:cursive;
     font-style: oblique;
