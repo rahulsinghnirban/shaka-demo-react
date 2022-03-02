@@ -13,13 +13,23 @@ async function init() {
   const player = controls.getPlayer();
   const btn = document.getElementById('btn');
   let hideBar = true;
+  const config={
+    'seekBarColors': {
+      base: '#185adb',
+      buffered: 'rgba(255, 255, 255, 0.54)',
+      played: 'rgb(255, 255, 255,0.5)',
+      adBreaks: 'rgb(255, 204, 0)'
+    }
+  }
+  ui.configure(config);
 
   // const skip = new (func())();
 
 
   btn.addEventListener('click', ()=>{
     const config = {
-      addSeekBar: hideBar ? false : true
+      addSeekBar: hideBar ? false : true,
+      
     };
     hideBar = !hideBar
     ui.configure(config);  
